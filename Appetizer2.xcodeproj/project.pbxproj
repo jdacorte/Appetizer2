@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		F18B20BF274D987E001D3B38 /* Appetizer2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B20BE274D987E001D3B38 /* Appetizer2App.swift */; };
-		F18B20C1274D987E001D3B38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B20C0274D987E001D3B38 /* ContentView.swift */; };
+		F18B20C1274D987E001D3B38 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B20C0274D987E001D3B38 /* AppetizerTabView.swift */; };
 		F18B20C3274D987F001D3B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F18B20C2274D987F001D3B38 /* Assets.xcassets */; };
 		F18B20C6274D987F001D3B38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F18B20C5274D987F001D3B38 /* Preview Assets.xcassets */; };
 		F18B20D0274D987F001D3B38 /* Appetizer2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B20CF274D987F001D3B38 /* Appetizer2Tests.swift */; };
 		F18B20DA274D987F001D3B38 /* Appetizer2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B20D9274D987F001D3B38 /* Appetizer2UITests.swift */; };
 		F18B20DC274D987F001D3B38 /* Appetizer2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B20DB274D987F001D3B38 /* Appetizer2UITestsLaunchTests.swift */; };
+		F18B20E9274D9C83001D3B38 /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B20E8274D9C83001D3B38 /* AppetizerListView.swift */; };
+		F18B20EB274D9CAB001D3B38 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B20EA274D9CAB001D3B38 /* OrderView.swift */; };
+		F18B20ED274D9CC0001D3B38 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B20EC274D9CC0001D3B38 /* AccountView.swift */; };
+		F18B20F3274E6887001D3B38 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B20F2274E6887001D3B38 /* Appetizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		F18B20BB274D987E001D3B38 /* Appetizer2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizer2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18B20BE274D987E001D3B38 /* Appetizer2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer2App.swift; sourceTree = "<group>"; };
-		F18B20C0274D987E001D3B38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F18B20C0274D987E001D3B38 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
 		F18B20C2274D987F001D3B38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F18B20C5274D987F001D3B38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F18B20CB274D987F001D3B38 /* Appetizer2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Appetizer2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,10 @@
 		F18B20D5274D987F001D3B38 /* Appetizer2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Appetizer2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18B20D9274D987F001D3B38 /* Appetizer2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer2UITests.swift; sourceTree = "<group>"; };
 		F18B20DB274D987F001D3B38 /* Appetizer2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F18B20E8274D9C83001D3B38 /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
+		F18B20EA274D9CAB001D3B38 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		F18B20EC274D9CC0001D3B38 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		F18B20F2274E6887001D3B38 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +103,13 @@
 			isa = PBXGroup;
 			children = (
 				F18B20BE274D987E001D3B38 /* Appetizer2App.swift */,
-				F18B20C0274D987E001D3B38 /* ContentView.swift */,
+				F18B20C0274D987E001D3B38 /* AppetizerTabView.swift */,
+				F18B20E8274D9C83001D3B38 /* AppetizerListView.swift */,
+				F18B20EA274D9CAB001D3B38 /* OrderView.swift */,
+				F18B20EC274D9CC0001D3B38 /* AccountView.swift */,
 				F18B20C2274D987F001D3B38 /* Assets.xcassets */,
 				F18B20C4274D987F001D3B38 /* Preview Content */,
+				F18B20F2274E6887001D3B38 /* Appetizer.swift */,
 			);
 			path = Appetizer2;
 			sourceTree = "<group>";
@@ -257,8 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F18B20C1274D987E001D3B38 /* ContentView.swift in Sources */,
+				F18B20F3274E6887001D3B38 /* Appetizer.swift in Sources */,
+				F18B20C1274D987E001D3B38 /* AppetizerTabView.swift in Sources */,
+				F18B20EB274D9CAB001D3B38 /* OrderView.swift in Sources */,
 				F18B20BF274D987E001D3B38 /* Appetizer2App.swift in Sources */,
+				F18B20E9274D9C83001D3B38 /* AppetizerListView.swift in Sources */,
+				F18B20ED274D9CC0001D3B38 /* AccountView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
