@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F150C2E02753E8A0000B0D08 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150C2DF2753E8A0000B0D08 /* RemoteImage.swift */; };
+		F150C2EF275417BB000B0D08 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150C2EE275417BB000B0D08 /* AppetizerDetailView.swift */; };
 		F18B20BF274D987E001D3B38 /* Appetizer2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B20BE274D987E001D3B38 /* Appetizer2App.swift */; };
 		F18B20C1274D987E001D3B38 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B20C0274D987E001D3B38 /* AppetizerTabView.swift */; };
 		F18B20C3274D987F001D3B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F18B20C2274D987F001D3B38 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		F150C2DF2753E8A0000B0D08 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		F150C2EE275417BB000B0D08 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 		F18B20BB274D987E001D3B38 /* Appetizer2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizer2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18B20BE274D987E001D3B38 /* Appetizer2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer2App.swift; sourceTree = "<group>"; };
 		F18B20C0274D987E001D3B38 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -95,6 +97,120 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F150C2E127540296000B0D08 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F18B20C0274D987E001D3B38 /* AppetizerTabView.swift */,
+				F150C2E4275402BA000B0D08 /* AppetizerListView */,
+				F150C2E3275402B9000B0D08 /* Account View */,
+				F150C2E2275402A6000B0D08 /* OrderView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F150C2E2275402A6000B0D08 /* OrderView */ = {
+			isa = PBXGroup;
+			children = (
+				F18B20EA274D9CAB001D3B38 /* OrderView.swift */,
+			);
+			path = OrderView;
+			sourceTree = "<group>";
+		};
+		F150C2E3275402B9000B0D08 /* Account View */ = {
+			isa = PBXGroup;
+			children = (
+				F18B20EC274D9CC0001D3B38 /* AccountView.swift */,
+			);
+			path = "Account View";
+			sourceTree = "<group>";
+		};
+		F150C2E4275402BA000B0D08 /* AppetizerListView */ = {
+			isa = PBXGroup;
+			children = (
+				F18B20FC275122E4001D3B38 /* AppetizerListViewModel.swift */,
+				F18B20E8274D9C83001D3B38 /* AppetizerListView.swift */,
+				F150C2EE275417BB000B0D08 /* AppetizerDetailView.swift */,
+			);
+			path = AppetizerListView;
+			sourceTree = "<group>";
+		};
+		F150C2E52754038E000B0D08 /* Utiliities */ = {
+			isa = PBXGroup;
+			children = (
+				F150C2E827540406000B0D08 /* Managers */,
+				F150C2E7275403DE000B0D08 /* Alerts */,
+				F150C2E6275403CE000B0D08 /* Extensions */,
+			);
+			path = Utiliities;
+			sourceTree = "<group>";
+		};
+		F150C2E6275403CE000B0D08 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F18B210027525DC7001D3B38 /* Color+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F150C2E7275403DE000B0D08 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				F18B20F8274EB5FD001D3B38 /* APError.swift */,
+				F18B20FA27511D7E001D3B38 /* Alert.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		F150C2E827540406000B0D08 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F18B20F6274EAB0D001D3B38 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F150C2E9275404AC000B0D08 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F18B20F2274E6887001D3B38 /* Appetizer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F150C2EA275404FB000B0D08 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F150C2ED2754056F000B0D08 /* Cells */,
+				F150C2EC2754056E000B0D08 /* Image */,
+				F150C2EB2754050C000B0D08 /* UIKirComponents */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F150C2EB2754050C000B0D08 /* UIKirComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F18B20FE27525BF3001D3B38 /* LoadingView.swift */,
+			);
+			path = UIKirComponents;
+			sourceTree = "<group>";
+		};
+		F150C2EC2754056E000B0D08 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				F150C2DF2753E8A0000B0D08 /* RemoteImage.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		F150C2ED2754056F000B0D08 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F18B20F4274E9A4F001D3B38 /* AppetizerListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		F18B20B2274D987E001D3B38 = {
 			isa = PBXGroup;
 			children = (
@@ -118,22 +234,13 @@
 		F18B20BD274D987E001D3B38 /* Appetizer2 */ = {
 			isa = PBXGroup;
 			children = (
+				F150C2E9275404AC000B0D08 /* Model */,
+				F150C2E127540296000B0D08 /* Screens */,
+				F150C2EA275404FB000B0D08 /* Views */,
+				F150C2E52754038E000B0D08 /* Utiliities */,
 				F18B20BE274D987E001D3B38 /* Appetizer2App.swift */,
-				F18B20C0274D987E001D3B38 /* AppetizerTabView.swift */,
-				F18B20E8274D9C83001D3B38 /* AppetizerListView.swift */,
-				F18B20EA274D9CAB001D3B38 /* OrderView.swift */,
-				F18B20EC274D9CC0001D3B38 /* AccountView.swift */,
 				F18B20C2274D987F001D3B38 /* Assets.xcassets */,
 				F18B20C4274D987F001D3B38 /* Preview Content */,
-				F18B20F2274E6887001D3B38 /* Appetizer.swift */,
-				F18B20F4274E9A4F001D3B38 /* AppetizerListCell.swift */,
-				F18B20F6274EAB0D001D3B38 /* NetworkManager.swift */,
-				F18B20F8274EB5FD001D3B38 /* APError.swift */,
-				F18B20FA27511D7E001D3B38 /* Alert.swift */,
-				F18B20FC275122E4001D3B38 /* AppetizerListViewModel.swift */,
-				F18B20FE27525BF3001D3B38 /* LoadingView.swift */,
-				F18B210027525DC7001D3B38 /* Color+Ext.swift */,
-				F150C2DF2753E8A0000B0D08 /* RemoteImage.swift */,
 			);
 			path = Appetizer2;
 			sourceTree = "<group>";
@@ -303,6 +410,7 @@
 				F18B20EB274D9CAB001D3B38 /* OrderView.swift in Sources */,
 				F18B20F7274EAB0D001D3B38 /* NetworkManager.swift in Sources */,
 				F150C2E02753E8A0000B0D08 /* RemoteImage.swift in Sources */,
+				F150C2EF275417BB000B0D08 /* AppetizerDetailView.swift in Sources */,
 				F18B20BF274D987E001D3B38 /* Appetizer2App.swift in Sources */,
 				F18B20E9274D9C83001D3B38 /* AppetizerListView.swift in Sources */,
 				F18B20FB27511D7E001D3B38 /* Alert.swift in Sources */,
