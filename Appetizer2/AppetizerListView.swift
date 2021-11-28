@@ -8,32 +8,37 @@
 import SwiftUI
 
 struct AppetizerListView: View {
+    
+    @StateObject var viewModel = AppetizerListViewModel()
+    
     var body: some View {
-        NavigationView {
-            List(MockData.appetizers, id: \.id) { appetizer in
-                HStack{
-                    Image("asian-flank-steak")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 120, height: 90)
-                        .cornerRadius(8)
-                    
-                    VStack (alignment: .leading, spacing: 5){
-                        Text(appetizer.name)
-                            .font(.title2)
-                            .fontWeight(.medium)
-                        Text("$\(appetizer.price, specifier: "%.2f")")
-                            .foregroundColor(.secondary)
-                            .fontWeight(.semibold)
-                    }
-                    .padding(.leading)
-                    
+        ZStack {
+            NavigationView {
+                List(viewModel.appetizers) { appetizer in
+                    AppetizerListCell(appetizer: appetizer)
                 }
+                .navigationTitle("Appetizers")
             }
-            .navigationTitle("Appetizers")
+            .navigationViewStyle(StackNavigationViewStyle())
+           
+            .onAppear {
+                viewModel.getAppetizers()
+            }
+            
+            if viewModel.isLoading {
+                LoadingView()
+            }
+          
+
         }
-        .navigationViewStyle(StackNavigationViewStyle())
+        .alert(item: $viewModel.alertItem) { alertItem in
+            Alert(title: alertItem.title,
+                  message: alertItem.message,
+                  dismissButton: alertItem.dismissButton)
+        }
+
     }
+    
 }
 
 struct AppetizerListView_Previews: PreviewProvider {

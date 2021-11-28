@@ -12,10 +12,7 @@ struct AppetizerTabView: View {
         TabView {
             AppetizerListView()
                 .tabItem {
-                    Label("Order", systemImage: "house")
-                   
-//                    Image(systemName: "house")
-//                    Text("Home")
+                    Label("Home", systemImage: "house")
                 }
             OrderView()
                 .tabItem {
@@ -23,13 +20,10 @@ struct AppetizerTabView: View {
                 }
             AccountView()
                 .tabItem {
-                    Label("Order", systemImage: "person")
-//                    Image(systemName: "person")
-//                    Text("Account")
+                    Label("Account", systemImage: "person")
                 }
-   
         }
-        .accentColor(Color("brandPrimary"))
+        .accentColor(.brandPrimary)
     }
 }
 
