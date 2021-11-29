@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		F150C2E02753E8A0000B0D08 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150C2DF2753E8A0000B0D08 /* RemoteImage.swift */; };
 		F150C2EF275417BB000B0D08 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150C2EE275417BB000B0D08 /* AppetizerDetailView.swift */; };
+		F150C2F2275450DD000B0D08 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150C2F1275450DD000B0D08 /* APButton.swift */; };
+		F150C2F427545365000B0D08 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150C2F327545365000B0D08 /* XDismissButton.swift */; };
+		F150C2F6275460C2000B0D08 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150C2F5275460C2000B0D08 /* AccountViewModel.swift */; };
+		F150C2F827546314000B0D08 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150C2F727546314000B0D08 /* String+Ext.swift */; };
 		F18B20BF274D987E001D3B38 /* Appetizer2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B20BE274D987E001D3B38 /* Appetizer2App.swift */; };
 		F18B20C1274D987E001D3B38 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B20C0274D987E001D3B38 /* AppetizerTabView.swift */; };
 		F18B20C3274D987F001D3B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F18B20C2274D987F001D3B38 /* Assets.xcassets */; };
@@ -49,6 +53,10 @@
 /* Begin PBXFileReference section */
 		F150C2DF2753E8A0000B0D08 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		F150C2EE275417BB000B0D08 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
+		F150C2F1275450DD000B0D08 /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
+		F150C2F327545365000B0D08 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
+		F150C2F5275460C2000B0D08 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		F150C2F727546314000B0D08 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		F18B20BB274D987E001D3B38 /* Appetizer2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizer2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18B20BE274D987E001D3B38 /* Appetizer2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer2App.swift; sourceTree = "<group>"; };
 		F18B20C0274D987E001D3B38 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -120,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				F18B20EC274D9CC0001D3B38 /* AccountView.swift */,
+				F150C2F5275460C2000B0D08 /* AccountViewModel.swift */,
 			);
 			path = "Account View";
 			sourceTree = "<group>";
@@ -148,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				F18B210027525DC7001D3B38 /* Color+Ext.swift */,
+				F150C2F727546314000B0D08 /* String+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -180,6 +190,7 @@
 		F150C2EA275404FB000B0D08 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F150C2F0275450B4000B0D08 /* Buttons */,
 				F150C2ED2754056F000B0D08 /* Cells */,
 				F150C2EC2754056E000B0D08 /* Image */,
 				F150C2EB2754050C000B0D08 /* UIKirComponents */,
@@ -209,6 +220,15 @@
 				F18B20F4274E9A4F001D3B38 /* AppetizerListCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		F150C2F0275450B4000B0D08 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				F150C2F1275450DD000B0D08 /* APButton.swift */,
+				F150C2F327545365000B0D08 /* XDismissButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		F18B20B2274D987E001D3B38 = {
@@ -402,14 +422,18 @@
 			files = (
 				F18B20F3274E6887001D3B38 /* Appetizer.swift in Sources */,
 				F18B20F9274EB5FD001D3B38 /* APError.swift in Sources */,
+				F150C2F427545365000B0D08 /* XDismissButton.swift in Sources */,
 				F18B20FD275122E4001D3B38 /* AppetizerListViewModel.swift in Sources */,
+				F150C2F6275460C2000B0D08 /* AccountViewModel.swift in Sources */,
 				F18B20F5274E9A4F001D3B38 /* AppetizerListCell.swift in Sources */,
 				F18B210127525DC7001D3B38 /* Color+Ext.swift in Sources */,
 				F18B20C1274D987E001D3B38 /* AppetizerTabView.swift in Sources */,
+				F150C2F2275450DD000B0D08 /* APButton.swift in Sources */,
 				F18B20FF27525BF3001D3B38 /* LoadingView.swift in Sources */,
 				F18B20EB274D9CAB001D3B38 /* OrderView.swift in Sources */,
 				F18B20F7274EAB0D001D3B38 /* NetworkManager.swift in Sources */,
 				F150C2E02753E8A0000B0D08 /* RemoteImage.swift in Sources */,
+				F150C2F827546314000B0D08 /* String+Ext.swift in Sources */,
 				F150C2EF275417BB000B0D08 /* AppetizerDetailView.swift in Sources */,
 				F18B20BF274D987E001D3B38 /* Appetizer2App.swift in Sources */,
 				F18B20E9274D9C83001D3B38 /* AppetizerListView.swift in Sources */,
