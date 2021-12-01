@@ -14,6 +14,8 @@
 		F150C2F6275460C2000B0D08 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150C2F5275460C2000B0D08 /* AccountViewModel.swift */; };
 		F150C2F827546314000B0D08 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150C2F727546314000B0D08 /* String+Ext.swift */; };
 		F150C2FA27559F42000B0D08 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150C2F927559F42000B0D08 /* User.swift */; };
+		F150C2FF2756FBBD000B0D08 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150C2FE2756FBBD000B0D08 /* EmptyState.swift */; };
+		F150C3012757056B000B0D08 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150C3002757056B000B0D08 /* Order.swift */; };
 		F18B20BF274D987E001D3B38 /* Appetizer2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B20BE274D987E001D3B38 /* Appetizer2App.swift */; };
 		F18B20C1274D987E001D3B38 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B20C0274D987E001D3B38 /* AppetizerTabView.swift */; };
 		F18B20C3274D987F001D3B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F18B20C2274D987F001D3B38 /* Assets.xcassets */; };
@@ -59,6 +61,8 @@
 		F150C2F5275460C2000B0D08 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		F150C2F727546314000B0D08 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		F150C2F927559F42000B0D08 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F150C2FE2756FBBD000B0D08 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		F150C3002757056B000B0D08 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		F18B20BB274D987E001D3B38 /* Appetizer2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizer2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18B20BE274D987E001D3B38 /* Appetizer2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer2App.swift; sourceTree = "<group>"; };
 		F18B20C0274D987E001D3B38 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -129,7 +133,6 @@
 		F150C2E3275402B9000B0D08 /* Account View */ = {
 			isa = PBXGroup;
 			children = (
-				F150C2F927559F42000B0D08 /* User.swift */,
 				F18B20EC274D9CC0001D3B38 /* AccountView.swift */,
 				F150C2F5275460C2000B0D08 /* AccountViewModel.swift */,
 			);
@@ -186,6 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				F18B20F2274E6887001D3B38 /* Appetizer.swift */,
+				F150C3002757056B000B0D08 /* Order.swift */,
+				F150C2F927559F42000B0D08 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 		F150C2EA275404FB000B0D08 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F150C2FD2756FB88000B0D08 /* Empty States */,
 				F150C2F0275450B4000B0D08 /* Buttons */,
 				F150C2ED2754056F000B0D08 /* Cells */,
 				F150C2EC2754056E000B0D08 /* Image */,
@@ -232,6 +238,14 @@
 				F150C2F327545365000B0D08 /* XDismissButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		F150C2FD2756FB88000B0D08 /* Empty States */ = {
+			isa = PBXGroup;
+			children = (
+				F150C2FE2756FBBD000B0D08 /* EmptyState.swift */,
+			);
+			path = "Empty States";
 			sourceTree = "<group>";
 		};
 		F18B20B2274D987E001D3B38 = {
@@ -427,6 +441,7 @@
 				F18B20F9274EB5FD001D3B38 /* APError.swift in Sources */,
 				F150C2F427545365000B0D08 /* XDismissButton.swift in Sources */,
 				F18B20FD275122E4001D3B38 /* AppetizerListViewModel.swift in Sources */,
+				F150C3012757056B000B0D08 /* Order.swift in Sources */,
 				F150C2F6275460C2000B0D08 /* AccountViewModel.swift in Sources */,
 				F18B20F5274E9A4F001D3B38 /* AppetizerListCell.swift in Sources */,
 				F18B210127525DC7001D3B38 /* Color+Ext.swift in Sources */,
@@ -438,6 +453,7 @@
 				F18B20F7274EAB0D001D3B38 /* NetworkManager.swift in Sources */,
 				F150C2E02753E8A0000B0D08 /* RemoteImage.swift in Sources */,
 				F150C2F827546314000B0D08 /* String+Ext.swift in Sources */,
+				F150C2FF2756FBBD000B0D08 /* EmptyState.swift in Sources */,
 				F150C2EF275417BB000B0D08 /* AppetizerDetailView.swift in Sources */,
 				F18B20BF274D987E001D3B38 /* Appetizer2App.swift in Sources */,
 				F18B20E9274D9C83001D3B38 /* AppetizerListView.swift in Sources */,
